@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.title{
+    font-size: 3em;
+    color: white;
+    height: 20%;
+}
+.caja{
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px black;
+    
+}
+form{
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+.conten-username{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 80%;
+}
