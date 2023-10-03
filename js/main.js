@@ -1,22 +1,28 @@
+//obteniendo los elementos de el HTML
 let eyes=document.querySelector(".span")
 let eyes2=document.querySelector(".bi-eye")
 let password=document.querySelector(".password")
 let iniciar=document.querySelector(".iniciar")
 let usuario=document.querySelector("#usuario")
-
 let flat=true
 
+//obtiene lo usuarios desde la pagina de registrar 
 let usuarios=JSON.parse(localStorage.getItem("usuario"))
-function confirmacion(){
 
+//comprueba si el usuario y la clave es existente
+iniciar.addEventListener("click",(e)=>{
+    e.preventDefault()
     usuarios.forEach(element => {
-        console.log(element.username)        
+        if(element.username === usuario.value && element.contraseña === password.value ){
+            alert("usuario existente")
+        }else{
+            alert("usuario no existente")
+        }   
     });
-    // if(usuarios.username == usuario.value && usuarios.password==){
+})
 
-    // }   
-}
 
+// cambia el input a tipo texto
 eyes.addEventListener("click",()=>{
     
     if (flat){
@@ -34,5 +40,4 @@ eyes.addEventListener("click",()=>{
 
 
 
-iniciar.addEventListener("click",confirmacion())
 
