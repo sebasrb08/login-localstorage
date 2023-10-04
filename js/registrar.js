@@ -43,4 +43,5 @@ registrar.addEventListener("click",(e)=>{
     }
         
     localStorage.setItem("usuario",JSON.stringify(usuarios))
+    location.href="http://127.0.0.1:5500/index.html"
 })

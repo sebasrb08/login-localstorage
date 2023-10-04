@@ -31,3 +31,6 @@ form{
     flex-direction: column;
     gap: 5px;
 }
+.input{
+    height: 50%;
+}

@@ -11,14 +11,18 @@ let usuarios=JSON.parse(localStorage.getItem("usuario"))
 
 //comprueba si el usuario y la clave es existente
 iniciar.addEventListener("click",(e)=>{
+    let flat2;
     e.preventDefault()
     usuarios.forEach(element => {
         if(element.username === usuario.value && element.contraseña === password.value ){
-            alert("usuario existente")
-        }else{
-            alert("usuario no existente")
-        }   
+            flat2=true
+        } 
     });
+    if (flat2){
+        alert("usuario existente")
+    }else{
+        alert("usuario no existente")
+    }
 })
 
 
